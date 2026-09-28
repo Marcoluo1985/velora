@@ -29,10 +29,10 @@ export default function ScrollGallery() {
       <img src={src} alt={['景观环绕的现代奢华住宅', '非凡建筑物业', '精致私人住宅'][i]} className="w-[85vw] h-auto max-w-[900px] aspect-[16/10] rounded-lg sm:w-full sm:h-full sm:max-w-none sm:aspect-auto sm:rounded-none object-cover"/>
     </div>)}
     <div className="absolute inset-0 flex items-center justify-center" style={{ ...scaleStyle(.64, .78), backgroundColor: `rgb(${shade}, ${shade}, ${shade})` }}>
-      <p className="font-geist font-light text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center leading-[1.3] max-w-3xl px-6 text-white" style={{ opacity: 1 - morph }}>纵览<span className="text-amber-500">全球</span>非凡地产机遇</p>
+      <p className="font-geist font-light text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center leading-[1.3] max-w-3xl px-6 text-white" style={{ opacity: 1 - morph }}>从零打造定制的<span className="text-amber-500">私塾影音空间</span></p>
     </div>
     <div className="absolute inset-0 flex items-center justify-center" style={{ opacity: phase(progress, .9, 1) }}>
-      <p className="font-geist font-light text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center leading-[1.3] max-w-3xl px-6 text-neutral-800">以信任为基，以<span className="text-amber-500">专业</span>致远</p>
+      <p className="font-geist font-light text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center leading-[1.3] max-w-3xl px-6 text-neutral-800">设计，装修，设备全案<span className="text-amber-500">一站式服务</span></p>
     </div>
   </div>;
 }
