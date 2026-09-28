@@ -16,8 +16,8 @@ export default function SplashScreen({ onComplete }: { onComplete: () => void })
     const timer = window.setTimeout(onComplete, 800);
     return () => clearTimeout(timer);
   }, [fading, onComplete]);
-  return <div className={`fixed inset-0 z-[9999] bg-black flex items-center transition-opacity duration-700 ${fading ? 'opacity-0 pointer-events-none' : 'opacity-100'}`} aria-label="VELORA introduction">
+  return <div className={`fixed inset-0 z-[9999] bg-black flex items-center transition-opacity duration-700 ${fading ? 'opacity-0 pointer-events-none' : 'opacity-100'}`} aria-label="天隽凯文化开场动画">
     <video ref={video} className="absolute top-[20%] left-[30%] md:left-[55%] md:-translate-x-1/2 w-[320px] sm:w-[390px] md:w-[750px] max-w-none aspect-video object-contain" src={splashVideo} autoPlay muted playsInline onEnded={() => setFading(true)} onError={() => setFading(true)}/>
-    <button onClick={() => setFading(true)} className="absolute bottom-8 right-8 text-white/60 hover:text-white text-xs tracking-[0.2em] uppercase">Skip intro</button>
+    <button onClick={() => setFading(true)} className="absolute bottom-8 right-8 text-white/60 hover:text-white text-xs tracking-[0.2em] uppercase">跳过开场</button>
   </div>;
 }

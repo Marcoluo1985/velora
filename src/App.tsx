@@ -15,7 +15,7 @@ export default function App() {
       <div className="relative flex h-full flex-col">
         <header className="relative z-10 flex items-center justify-between px-4 sm:px-6 md:px-12 pt-4 sm:pt-6 md:pt-8">
           <div className="w-8 sm:w-32 md:w-40" />
-          <a href="#" className="font-haboro text-white text-lg sm:text-xl md:text-2xl tracking-[0.2em] uppercase">天隽凯文化</a>
+          <a href="#" className="font-heiti text-white text-lg sm:text-xl md:text-2xl tracking-[0.2em] uppercase">天隽凯文化</a>
           <div className="w-8 sm:w-32 md:w-40"><a href="mailto:hello@velora.com" className="hidden sm:block bg-white text-black px-4 md:px-6 py-2 md:py-2.5 text-xs md:text-sm font-geist font-medium tracking-wide text-center hover:bg-white/90 transition-colors">联系我们</a></div>
         </header>
         <div className="flex-1 flex items-center justify-center px-4 sm:px-6"><h1 className="font-haboro text-white text-center text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] tracking-wide uppercase max-w-5xl">臻享天籁空间<br />您值得拥有</h1></div>

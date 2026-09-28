@@ -1,1 +1,1 @@
-export default { content: ['./index.html', './src/**/*.{ts,tsx}'], theme: { extend: { fontFamily: { haboro: ['"Haboro Norm Regular"', 'serif'], geist: ['Geist', 'sans-serif'] } } }, plugins: [] };
+export default { content: ['./index.html', './src/**/*.{ts,tsx}'], theme: { extend: { fontFamily: { heiti: ['STHeiti', '"Heiti SC"', '"华文黑体"', '"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'], haboro: ['"Haboro Norm Regular"', 'serif'], geist: ['Geist', 'sans-serif'] } } }, plugins: [] };
