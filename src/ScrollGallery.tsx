@@ -26,7 +26,7 @@ export default function ScrollGallery() {
   return <div className="fixed inset-0 z-10 pointer-events-none" aria-hidden={progress === 0}>
     <div className="absolute inset-y-0 left-1/2 -translate-x-1/2 bg-black" style={{ width }} />
     {images.map((src, i) => <div key={src} className="absolute inset-0 flex items-center justify-center" style={scaleStyle([.16, .34, .5][i], [.34, .5, .64][i])}>
-      <img src={src} alt={['景观环绕的现代奢华住宅', '非凡建筑物业', '精致私人住宅'][i]} className="w-[85vw] h-auto max-w-[900px] aspect-[16/10] rounded-lg sm:w-full sm:h-full sm:max-w-none sm:aspect-auto sm:rounded-none object-cover"/>
+      <img src={src} alt={['配备大幅投影幕与环绕音响的定制影音室', '非凡建筑物业', '精致私人住宅'][i]} className="w-[85vw] h-auto max-w-[900px] aspect-[16/10] rounded-lg sm:w-full sm:h-full sm:max-w-none sm:aspect-auto sm:rounded-none object-cover"/>
     </div>)}
     <div className="absolute inset-0 flex items-center justify-center" style={{ ...scaleStyle(.64, .78), backgroundColor: `rgb(${shade}, ${shade}, ${shade})` }}>
       <p className="font-geist font-light text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center leading-[1.3] max-w-3xl px-6 text-white" style={{ opacity: 1 - morph }}>从零打造定制的<span className="text-amber-500">私塾影音空间</span></p>
