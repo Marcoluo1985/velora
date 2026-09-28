@@ -2,7 +2,7 @@ import { useCallback, useState } from 'react';
 import SplashScreen from './SplashScreen';
 import ScrollGallery from './ScrollGallery';
 import Menu from './Menu';
-import { heroVideo, images } from './assets';
+import { heroVideo } from './assets';
 
 export default function App() {
   const [intro, setIntro] = useState(true);
@@ -10,7 +10,7 @@ export default function App() {
   return <main className="bg-black h-[900vh]">
     {intro && <SplashScreen onComplete={complete} />}
     <section className="fixed inset-0 h-screen w-full overflow-hidden z-0">
-      <video className="absolute inset-0 w-full h-full object-cover" src={heroVideo} poster={images[0]} autoPlay muted loop playsInline />
+      <video className="absolute inset-0 w-full h-full object-cover" src={heroVideo} poster="/media/home-poster.jpg" autoPlay muted loop playsInline />
       <div className="absolute inset-0 bg-black/20" />
       <div className="relative flex h-full flex-col">
         <header className="relative z-10 flex items-center justify-between px-4 sm:px-6 md:px-12 pt-4 sm:pt-6 md:pt-8">
