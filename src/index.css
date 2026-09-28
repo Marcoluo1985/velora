@@ -18,3 +18,12 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .menu-item-enter { animation: menuItemSlide .4s cubic-bezier(.16,1,.3,1) forwards; }
 .menu-link { @apply font-haboro text-white text-2xl md:text-3xl lg:text-4xl hover:text-neutral-300 transition-colors duration-200 block py-1; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
+.projector-scene { position: relative; width: min(72vw, 420px); aspect-ratio: 1; isolation: isolate; }
+.projector-body { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; z-index: 2; }
+.projector-reel { position: absolute; width: 32%; aspect-ratio: 1; object-fit: contain; z-index: 3; animation: reel-turn 3.8s linear infinite; }
+.projector-reel-back { left: -2.1%; top: -10.1%; }
+.projector-reel-front { left: 71.1%; top: .8%; animation-duration: 4.6s; }
+.projector-light { position: absolute; z-index: 1; left: 97%; top: 39%; width: 65%; height: 34%; transform-origin: left center; background: linear-gradient(90deg, rgba(255,221,162,.2), transparent); clip-path: polygon(0 47%, 100% 0, 100% 100%, 0 53%); animation: projector-flicker .18s steps(2) infinite; }
+@keyframes reel-turn { to { transform: rotate(360deg); } }
+@keyframes projector-flicker { 0% { opacity: .6; } 100% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .projector-reel, .projector-light { animation: none !important; } }
